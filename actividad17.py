@@ -5,16 +5,19 @@ ventana.title("Calculadora")
 ventana.geometry("600x500")
 ventana.configure(bg="light blue")
 
-fondo=tk.Frame(ventana,width=400, height=430, bg="pink")
+fondo=tk.Frame(ventana,width=400, height=430, bg="pink", bd=4, relief="raised")
 fondo.place(x=100, y=20)
 
-etiqueta1 = tk.Label(ventana, text="Ingrese el primer numero",font=("Bookman Old Style",14,"bold"), fg="turquoise")
-etiqueta1.pack(pady=(70,4))
+titulo = tk.Label(ventana, text="Calculadora", font=("Bookman Old Style", 20, "bold"), fg="darkblue")
+titulo.pack(pady=(20,4))
+
+etiqueta1 = tk.Label(ventana, text="Ingrese el primer número",font=("Bookman Old Style",14,"bold"), fg="turquoise")
+etiqueta1.pack(pady=(20,4))
 
 entrada1= tk.Entry(ventana)
 entrada1.pack(pady=4)
 
-etiqueta2=tk.Label(ventana, text="Ingrese el segundo numero",font=("Bookman Old Style",14,"bold"), fg="turquoise")
+etiqueta2=tk.Label(ventana, text="Ingrese el segundo número",font=("Bookman Old Style",14,"bold"), fg="turquoise")
 etiqueta2.pack(pady=4)
 
 entrada2=tk.Entry(ventana)
